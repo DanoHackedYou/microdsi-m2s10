@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MicroDSI · Feed</title>
+  <meta name="description" content="Feed de micro-lecciones para M2-S10 con ejemplos por track y marcadores."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <a class="skip" href="#feedWrap">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="row">
+      <div class="brand">
+        <b>MicroDSI</b>
+        <span>Feed · Micro-lecciones (M2-S10)</span>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <div class="btn trackPill" aria-label="Selector de track">
+          <small>Track</small>
+          <select id="trackSel" aria-label="Seleccionar track">
+            <option value="itsm">ITSM Triage</option>
+            <option value="hr">HR</option>
+            <option value="proc">Procurement</option>
+          </select>
+        </div>
+
+        <a class="btn" href="index.html">Inicio</a>
+        <a class="btn" href="pista.html">Pistas</a>
+        <a class="btn primary" href="lab.html">Laboratorio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="feedWrap" class="feedWrap" aria-live="polite"></main>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
