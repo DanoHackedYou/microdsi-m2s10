@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MicroDSI · Pistas</title>
+  <meta name="description" content="Caso guiado por tracks con respuestas guardadas localmente y progreso."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <a class="skip" href="#pistaWrap">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="row">
+      <div class="brand">
+        <b>MicroDSI</b>
+        <span>Pistas · Caso guiado (M2-S10)</span>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <div class="btn trackPill" aria-label="Selector de track">
+          <small>Track</small>
+          <select id="trackSel" aria-label="Seleccionar track">
+            <option value="itsm">ITSM Triage</option>
+            <option value="hr">HR</option>
+            <option value="proc">Procurement</option>
+          </select>
+        </div>
+
+        <a class="btn" href="index.html">Inicio</a>
+        <a class="btn" href="feed.html">Feed</a>
+        <a class="btn primary" href="lab.html">Laboratorio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="panel">
+      <b>Progreso</b>
+      <div class="progress" role="progressbar" aria-label="Progreso de pistas">
+        <i id="prog"></i>
+      </div>
+      <span class="footerHint">
+        Desplázate horizontalmente. Cada pista pide una respuesta breve con 1 dato o condición.
+        Las respuestas se guardan automáticamente en tu navegador.
+      </span>
+    </div>
+  </main>
+
+  <main id="pistaWrap" class="pistaWrap"></main>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
